@@ -297,7 +297,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = AQGridView;
-				SKIP_INSTALL = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "Headers/$(PRODUCT_NAME)";
 			};
 			name = Debug;
 		};
@@ -316,7 +316,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = AQGridView;
-				SKIP_INSTALL = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "Headers/$(PRODUCT_NAME)";
 			};
 			name = Release;
 		};
@@ -331,6 +331,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -345,6 +346,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
