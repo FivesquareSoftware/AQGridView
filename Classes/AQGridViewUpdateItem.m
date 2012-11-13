@@ -81,7 +81,7 @@
 	}
 	
 	NSString * animationDesc = @"<Unknown>";
-	switch ( _animation )
+	switch ( (UITableViewRowAnimation)_animation )
 	{
 		case UITableViewRowAnimationFade:
 			animationDesc = @"Fade";
@@ -107,10 +107,7 @@
 		default:
 			break;
 	}
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wformat"
-	return ( [NSString stringWithFormat: @"%@{index=%u, action=%@, animation=%@, offset=%.02f}", [super description], (unsigned)_index, actionDesc, animationDesc, _offset] );
-#pragma clang diagnostic pop
+	return ( [NSString stringWithFormat: @"%@{index=%u, action=%@, animation=%@, offset=%.02f}", [super description], (unsigned)_index, actionDesc, animationDesc, (double)_offset] );
 }
 
 - (NSComparisonResult) compare: (AQGridViewUpdateItem *) other
